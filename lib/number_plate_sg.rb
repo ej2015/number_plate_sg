@@ -1,5 +1,11 @@
-require "number_plate_sg/version"
+require "number_plate/version"
+require "number_plate/sg/validator"
+require "number_plate/sg/generator"
+require "active_support/core_ext/string"
 
-module NumberPlateSg
-  # Your code goes here...
+module NumberPlate
+  module SG
+
+
+  end
 end
