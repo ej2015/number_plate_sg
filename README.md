@@ -1,8 +1,9 @@
 # NumberPlateSg
 [![CodeFactor](https://www.codefactor.io/repository/github/ej2015/number_plate_sg/badge)](https://www.codefactor.io/repository/github/ej2015/number_plate_sg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/eba3926f39c9682e47ed/maintainability)](https://codeclimate.com/github/ej2015/my_age/maintainability)
-A little utility to validate a Singpaore number plate or to generate a random number
 [![Build Status](https://travis-ci.org/ej2015/number_plate_sg.svg?branch=master)](https://travis-ci.org/ej2015/number_plate_sg)
+
+A little utility to validate a Singpaore number plate or to generate a random number
 
 ## Installation
 
