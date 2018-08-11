@@ -8,12 +8,12 @@ require "number_plate/sg/active_model"
 module NumberPlate
 
   class << self
-    def validator
-      NumberPlate::SG::Validator.new
+    def validator(country)
+      Object.const_get("NumberPlate::#{country}::Validator").new
     end
 
-    def generator
-      NumberPlate::SG::Generator.new
+    def generator(country)
+      Object.const_get("NumberPlate::#{country}::Generator").new
     end
   end
 

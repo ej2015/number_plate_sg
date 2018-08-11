@@ -30,7 +30,7 @@ module NumberPlate
       def random_letters
         (0..rand(2)).map do
           rand(65..90).chr
-        end
+        end.join
       end
     end
   end
