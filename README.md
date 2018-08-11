@@ -19,8 +19,56 @@ Or install it yourself as:
     $ gem install number_plate_sg
 
 ## Usage
+Use the validator
+```
+  ##Initialize validator:
+  validator =  NumberPlate.validator("SG")
 
-TODO: Write usage instructions here
+  ##Check if it is valid:
+  validator.is_valid?("EJ81D")
+  #=> true
+   
+  validator.is_valid?("EJ81E")
+  #=> false
+
+  ##get the current country code
+  validator.country
+  #=> "SG"
+```
+Use the generator
+```
+  ##Initialize generator
+  generator = NumberPlate.generator('SG')
+  
+  generator.generate
+  #=> SFZ999K
+```
+## ActiveModel
+
+A `NumberPlateSgValidator` is provided with this gem to be used with ActiveModel. 
+
+```
+class Vehicle < ActiveRecord::Base
+  validates :plate_number, number_plate_sg: true 
+  ...
+end
+
+```
+
+## Command Line Interface
+A CLI is provided to check the plate validity
+
+```
+$number_plate_sg validate EJ81D
+$true
+
+```
+A CLI is also provided to generate a random number
+
+```
+$number_plate_sg generate
+$SFZ999K
+```
 
 ## Development
 
